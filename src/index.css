@@ -14,19 +14,20 @@
   --radius-2xl: 1.5rem;
 }
 
-@variant dark (&:where(.dark, .dark *));
+/* Disable dark mode variant by setting it to a non-existent class */
+@variant dark (.force-light-mode-only);
 
 @layer base {
+  html {
+    color-scheme: light;
+  }
+
   body {
     @apply bg-beige text-zen-dark font-sans antialiased selection:bg-matcha/20 selection:text-matcha transition-colors duration-500;
   }
 
-  .dark body {
-    @apply bg-zen-dark text-beige;
-  }
-
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight text-zen-dark dark:text-beige;
+    @apply font-serif tracking-tight text-zen-dark;
   }
 
   p, span, div {
@@ -36,10 +37,6 @@
 
 .glass {
   @apply bg-white/70 backdrop-blur-md border border-white/20 transition-all duration-500;
-}
-
-.dark .glass {
-  @apply bg-zen-dark/70 border-white/10 shadow-2xl shadow-black/20;
 }
 
 .text-balance {
