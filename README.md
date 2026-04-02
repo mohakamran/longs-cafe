@@ -59,48 +59,12 @@ Longs Cafe is a matcha-focused web experience inspired by Japanese Zen aesthetic
 
 ---
 
-## 🚀 Performance
+## 🚀 Getting Started (Run Locally)
 
-- Fast loading experience
-- Optimized assets and images
-- Smooth transitions and animations
-- Lightweight and efficient UI
+Clone the repository and start the development server:
 
----
-
-## 🎯 Purpose
-
-This project aims to create a premium digital identity for a matcha brand by:
-- Delivering a calming and aesthetic experience
-- Showcasing matcha culture and products
-- Engaging users with modern UI/UX
-
----
-
-## 📌 Status
-
-Live and deployed on Vercel  
-Ready for future enhancements and scaling
-
----
-
-## 🔮 Future Improvements
-
-- Online ordering system
-- Dark mode toggle
-- Multi-language support (EN / JP)
-- Advanced animations and interactions
-- Backend integration for dynamic content
-
----
-
-## 👨‍💻 Author
-
-Muhammad Kamran  
-Frontend Developer & Freelancer
-
----
-
-## 💡 Vision
-
-Bringing the serenity of matcha culture into a modern digital experience.
+```bash
+git clone https://github.com/mohakamran/longs-cafe.git
+cd longs-cafe
+npm install
+npm run dev
