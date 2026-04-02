@@ -1,55 +1,20 @@
-# ☕ Coffee & Matcha Landing Page
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-A modern, visually stunning landing page for a premium coffee shop brand specializing in artisan coffee and matcha drinks. Built with performance, aesthetics, and user experience in mind.
+# Run and deploy your AI Studio app
 
----
+This contains everything you need to run your app locally.
 
-## 🚀 Overview
-This project showcases a luxury café-style web experience with smooth animations, elegant typography, and a calming design inspired by Japanese Zen aesthetics.
+View your app in AI Studio: https://ai.studio/apps/0f59e58a-1190-4a7e-b683-ac6b9e4d8674
 
----
+## Run Locally
 
-## 🛠 Tech Stack
-- Next.js (App Router)
-- Tailwind CSS
-- Framer Motion (animations)
-- Lucide Icons
-
----
-
-## 🎨 Design Highlights
-- Minimal + luxury UI
-- Matcha green & coffee brown color palette
-- Elegant typography (Playfair Display + Inter)
-- Soft shadows, rounded corners, subtle gradients
-
----
-
-## 📦 Features
-- Hero section with strong CTA
-- Featured coffee & matcha drinks
-- Interactive menu with tabs
-- Smooth scroll animations
-- Testimonials slider
-- Responsive design (mobile-first)
-- Optimized performance with modern practices
-
----
-
-## 📱 Sections
-- Hero
-- Featured Drinks
-- Experience / Story
-- Menu
-- Testimonials
-- Location
-- Footer
-
----
-
-## ⚡ Goal
-Deliver a premium, calming, and engaging digital experience that reflects a high-end café brand and encourages user interaction.
+**Prerequisites:**  Node.js
 
 
-## 📌 Status
-Ready for development and customization.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

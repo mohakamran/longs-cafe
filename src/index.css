@@ -14,6 +14,8 @@
   --radius-2xl: 1.5rem;
 }
 
+@variant dark (&:where(.dark, .dark *));
+
 @layer base {
   body {
     @apply bg-beige text-zen-dark font-sans antialiased selection:bg-matcha/20 selection:text-matcha transition-colors duration-500;
