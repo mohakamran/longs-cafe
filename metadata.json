@@ -1,0 +1,5 @@
+{
+  "name": "Long's Cafe",
+  "description": "An artisan matcha lab born from a university idea, serving premium flavored matcha at the University of Kitakyushu, Hibikino Campus.",
+  "requestFramePermissions": ["geolocation"]
+}

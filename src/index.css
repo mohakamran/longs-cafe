@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+  --color-matcha: #2F5D50;
+  --color-coffee: #6F4E37;
+  --color-caramel: #D4A373;
+  --color-beige: #F7F3EF;
+  --color-zen-dark: #1A1A1A;
+
+  --radius-2xl: 1.5rem;
+}
+
+@layer base {
+  body {
+    @apply bg-beige text-zen-dark font-sans antialiased selection:bg-matcha/20 selection:text-matcha transition-colors duration-500;
+  }
+
+  .dark body {
+    @apply bg-zen-dark text-beige;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-zen-dark dark:text-beige;
+  }
+
+  p, span, div {
+    @apply transition-colors duration-500;
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 transition-all duration-500;
+}
+
+.dark .glass {
+  @apply bg-zen-dark/70 border-white/10 shadow-2xl shadow-black/20;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
