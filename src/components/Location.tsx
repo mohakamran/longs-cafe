@@ -146,8 +146,8 @@ export function Footer() {
                   { name: 'Home', path: '/' },
                   { name: 'Menu', path: '/menu' },
                   { name: 'Wishlist', path: '/wishlist' },
-                  { name: 'Experience', path: '/#experience' },
-                  { name: 'Locations', path: '/#locations' }
+                  { name: 'Experience', path: '/experience' },
+                  { name: 'Locations', path: '/locations' }
                 ].map((link) => (
                   <li key={link.name}>
                     <Link 

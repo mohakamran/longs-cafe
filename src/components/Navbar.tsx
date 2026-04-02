@@ -68,19 +68,29 @@ export default function Navbar() {
             <motion.span whileHover={{ y: -2 }} className="inline-block">Menu</motion.span>
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
           </Link>
-          {['Experience', 'Locations', 'Story'].map((item, i) => (
-            <motion.a
-              key={item}
-              href={isHome ? `#${item.toLowerCase()}` : `/#${item.toLowerCase()}`}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
-            >
-              <motion.span whileHover={{ y: -2 }} className="inline-block">{item}</motion.span>
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
-            </motion.a>
-          ))}
+          <Link
+            to="/experience"
+            className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
+          >
+            <motion.span whileHover={{ y: -2 }} className="inline-block">Experience</motion.span>
+            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
+          </Link>
+          <Link
+            to="/locations"
+            className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
+          >
+            <motion.span whileHover={{ y: -2 }} className="inline-block">Locations</motion.span>
+            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
+          </Link>
+          <motion.a
+            href={isHome ? "#story" : "/#story"}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
+          >
+            <motion.span whileHover={{ y: -2 }} className="inline-block">Story</motion.span>
+            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
+          </motion.a>
         </div>
 
         <div className="flex items-center gap-6">
@@ -254,16 +264,27 @@ export default function Navbar() {
                 <span className="bg-matcha text-white text-xs px-2 py-1 rounded-full">{totalItems}</span>
               )}
             </Link>
-            {['Experience', 'Locations', 'Story'].map((item) => (
-              <a 
-                key={item} 
-                href={isHome ? `#${item.toLowerCase()}` : `/#${item.toLowerCase()}`}
-                className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5 last:border-0"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
+            <Link
+              to="/experience"
+              className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Experience
+            </Link>
+            <Link
+              to="/locations"
+              className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Locations
+            </Link>
+            <a 
+              href={isHome ? "#story" : "/#story"}
+              className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5 last:border-0"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Story
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

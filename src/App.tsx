@@ -28,6 +28,8 @@ import FaqPage from './pages/FaqPage';
 import ShippingPage from './pages/ShippingPage';
 import ReturnsPage from './pages/ReturnsPage';
 import WishlistPage from './pages/WishlistPage';
+import ExperiencePage from './pages/ExperiencePage';
+import LocationsPage from './pages/LocationsPage';
 import { motion, useScroll, useSpring } from 'motion/react';
 
 function Home() {
@@ -85,6 +87,8 @@ export default function App() {
               <Route path="/shipping" element={<ShippingPage />} />
               <Route path="/returns" element={<ReturnsPage />} />
               <Route path="/wishlist" element={<WishlistPage />} />
+              <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/locations" element={<LocationsPage />} />
             </Routes>
           </main>
 

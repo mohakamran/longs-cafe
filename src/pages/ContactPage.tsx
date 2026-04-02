@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, Send, MessageSquare, Clock } from 'lucide-react';
 import React, { useState } from 'react';
+import Location from '../components/Location';
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -31,7 +32,7 @@ export default function ContactPage() {
           </motion.h1>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
           {/* Contact Info */}
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -159,6 +160,10 @@ export default function ContactPage() {
               </form>
             )}
           </motion.div>
+        </div>
+
+        <div className="pt-20 border-t border-zen-dark/5 dark:border-white/5">
+          <Location />
         </div>
       </div>
     </div>
