@@ -144,10 +144,10 @@ export function Footer() {
               <ul className="flex flex-col gap-5 text-white font-light opacity-80">
                 {[
                   { name: 'Home', path: '/' },
-                  { name: 'Menu', path: '/menu' },
+                  { name: 'Menu', path: '/#menu' },
                   { name: 'Wishlist', path: '/wishlist' },
-                  { name: 'Experience', path: '/experience' },
-                  { name: 'Locations', path: '/locations' }
+                  { name: 'Experience', path: '/#experience' },
+                  { name: 'Locations', path: '/#locations' }
                 ].map((link) => (
                   <li key={link.name}>
                     <Link 
@@ -210,10 +210,6 @@ export function Footer() {
 
         <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-8 text-[10px] text-white/40 uppercase tracking-[0.3em]">
           <p>© 2026 Long's Cafe. Born in the Lab, Served on Campus.</p>
-          <div className="flex gap-8">
-            <span className="hover:text-matcha cursor-pointer transition-colors">Privacy</span>
-            <span className="hover:text-matcha cursor-pointer transition-colors">Terms</span>
-          </div>
         </div>
       </div>
     </footer>

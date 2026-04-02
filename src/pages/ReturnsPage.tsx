@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { RotateCcw, ShieldCheck, HelpCircle, Mail, ArrowRight, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ReturnsPage() {
   return (
@@ -107,20 +108,20 @@ export default function ReturnsPage() {
             <div className="glass p-12 rounded-[3rem] shadow-xl border border-zen-dark/5 dark:border-white/5">
               <h3 className="text-2xl font-serif text-zen-dark dark:text-beige mb-6">Need Help?</h3>
               <div className="space-y-6">
-                <a href="/contact" className="flex items-center justify-between p-6 bg-beige/50 dark:bg-white/5 rounded-2xl group hover:bg-matcha hover:text-white transition-all">
+                <Link to="/contact" className="flex items-center justify-between p-6 bg-beige/50 dark:bg-white/5 rounded-2xl group hover:bg-matcha hover:text-white transition-all">
                   <div className="flex items-center gap-4">
                     <Mail size={20} />
                     <span className="font-medium">Email Support</span>
                   </div>
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                </a>
-                <a href="/contact" className="flex items-center justify-between p-6 bg-beige/50 dark:bg-white/5 rounded-2xl group hover:bg-matcha hover:text-white transition-all">
+                </Link>
+                <Link to="/contact" className="flex items-center justify-between p-6 bg-beige/50 dark:bg-white/5 rounded-2xl group hover:bg-matcha hover:text-white transition-all">
                   <div className="flex items-center gap-4">
                     <MessageSquare size={20} />
                     <span className="font-medium">Live Chat</span>
                   </div>
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -137,11 +138,11 @@ export default function ReturnsPage() {
           <p className="text-lg text-zen-dark/60 dark:text-beige/60 font-light max-w-2xl mx-auto mb-10">
             Our dedicated support team is here to ensure your experience with Long's Cafe is nothing short of exceptional.
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button className="px-12 py-5 bg-matcha text-white rounded-2xl font-bold text-sm tracking-widest uppercase hover:bg-matcha/90 transition-all shadow-2xl shadow-matcha/20">
               Contact Us
             </button>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </div>

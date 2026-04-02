@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
 import { ChevronDown, Search, HelpCircle, Coffee, Leaf, Truck, CreditCard } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const faqs = [
   {
@@ -183,11 +184,11 @@ export default function FaqPage() {
           <p className="text-zen-dark/60 dark:text-beige/60 font-light mb-8">
             Our team is here to help you find the perfect matcha experiment.
           </p>
-          <a href="/contact">
+          <Link to="/contact">
             <button className="px-10 py-4 bg-matcha text-white rounded-2xl font-bold text-xs uppercase tracking-widest hover:bg-matcha/90 transition-all shadow-lg shadow-matcha/20">
               Contact Support
             </button>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </div>

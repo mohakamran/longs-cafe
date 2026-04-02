@@ -30,6 +30,7 @@ import ReturnsPage from './pages/ReturnsPage';
 import WishlistPage from './pages/WishlistPage';
 import ExperiencePage from './pages/ExperiencePage';
 import LocationsPage from './pages/LocationsPage';
+import ScrollToTop from './components/ScrollToTop';
 import { motion, useScroll, useSpring } from 'motion/react';
 
 function Home() {
@@ -63,6 +64,7 @@ export default function App() {
   return (
     <CartProvider>
       <Router>
+        <ScrollToTop />
         <div className="relative min-h-screen selection:bg-matcha/20 selection:text-matcha overflow-x-hidden transition-colors duration-500">
           <InteractiveCursor />
           <FloatingCartButton />

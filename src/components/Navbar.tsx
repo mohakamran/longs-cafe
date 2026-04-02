@@ -62,35 +62,33 @@ export default function Navbar() {
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
           </Link>
           <Link
-            to="/menu"
+            to="/#menu"
             className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
           >
             <motion.span whileHover={{ y: -2 }} className="inline-block">Menu</motion.span>
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
           </Link>
           <Link
-            to="/experience"
+            to="/#experience"
             className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
           >
             <motion.span whileHover={{ y: -2 }} className="inline-block">Experience</motion.span>
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
           </Link>
           <Link
-            to="/locations"
+            to="/#locations"
             className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
           >
             <motion.span whileHover={{ y: -2 }} className="inline-block">Locations</motion.span>
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
           </Link>
-          <motion.a
-            href={isHome ? "#story" : "/#story"}
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
+          <Link
+            to="/#story"
             className="text-xs font-bold text-zen-dark/80 hover:text-matcha transition-all uppercase tracking-[0.2em] dark:text-beige/80 dark:hover:text-matcha relative group"
           >
             <motion.span whileHover={{ y: -2 }} className="inline-block">Story</motion.span>
             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-matcha transition-all duration-300 group-hover:w-full" />
-          </motion.a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-6">
@@ -238,7 +236,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              to="/menu"
+              to="/#menu"
               className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -265,26 +263,26 @@ export default function Navbar() {
               )}
             </Link>
             <Link
-              to="/experience"
+              to="/#experience"
               className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Experience
             </Link>
             <Link
-              to="/locations"
+              to="/#locations"
               className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Locations
             </Link>
-            <a 
-              href={isHome ? "#story" : "/#story"}
+            <Link 
+              to="/#story"
               className="text-lg font-serif text-black py-3 dark:text-white border-b border-black/5 dark:border-white/5 last:border-0"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Story
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

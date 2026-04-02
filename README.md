@@ -1,70 +1,20 @@
-# 🍵 Longs Cafe – Premium Matcha Experience
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-A modern, elegant, and immersive landing page dedicated to the art of matcha. Designed to deliver a calm, luxurious, and visually engaging digital café experience.
+# Run and deploy your AI Studio app
 
----
+This contains everything you need to run your app locally.
 
-## 🌐 Live Preview
+View your app in AI Studio: https://ai.studio/apps/0f59e58a-1190-4a7e-b683-ac6b9e4d8674
 
-https://longscafe.vercel.app/
+## Run Locally
 
----
+**Prerequisites:**  Node.js
 
-## 🌿 Overview
 
-Longs Cafe is a matcha-focused web experience inspired by Japanese Zen aesthetics and minimal design principles. It highlights the beauty, purity, and craftsmanship of matcha through smooth interactions and a refined user interface.
-
----
-
-## ✨ Experience
-
-- Calm and minimal user interface
-- Matcha-focused visual storytelling
-- Smooth animations and transitions
-- Clean, modern, and premium layout
-- Fully responsive across all devices
-
----
-
-## 🍃 Key Features
-
-- 🎯 Hero section with strong branding and call-to-action
-- 🍵 Featured matcha drinks and specialties
-- 🎨 Elegant and soothing design system
-- ⚡ Smooth scrolling and micro-interactions
-- 📱 Mobile-first responsive design
-- 🧩 Reusable and modular components
-
----
-
-## 🎨 Design System
-
-### Colors
-- Matcha Green – Fresh, natural, and calming
-- Soft Beige – Clean and minimal background
-- Earth Tones – Warm and organic accents
-
-### Typography
-- Headings: Elegant serif style (premium feel)
-- Body: Clean and modern sans-serif
-
----
-
-## ⚙️ Tech Stack
-
-- React / Vite
-- Tailwind CSS
-- Modern JavaScript (ES6+)
-- Component-based architecture
-
----
-
-## 🚀 Getting Started (Run Locally)
-
-Clone the repository and start the development server:
-
-```bash
-git clone https://github.com/mohakamran/longs-cafe.git
-cd longs-cafe
-npm install
-npm run dev
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
