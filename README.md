@@ -1,20 +1,106 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🍵 Longs Cafe – Premium Matcha Experience
 
-# Run and deploy your AI Studio app
+A modern, elegant, and immersive landing page dedicated to the art of matcha. Designed to deliver a calm, luxurious, and visually engaging digital café experience.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/0f59e58a-1190-4a7e-b683-ac6b9e4d8674
+## 🌐 Live Preview
 
-## Run Locally
+https://longscafe.vercel.app/
 
-**Prerequisites:**  Node.js
+---
 
+## 🌿 Overview
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Longs Cafe is a matcha-focused web experience inspired by Japanese Zen aesthetics and minimal design principles. It highlights the beauty, purity, and craftsmanship of matcha through smooth interactions and a refined user interface.
+
+---
+
+## ✨ Experience
+
+- Calm and minimal user interface
+- Matcha-focused visual storytelling
+- Smooth animations and transitions
+- Clean, modern, and premium layout
+- Fully responsive across all devices
+
+---
+
+## 🍃 Key Features
+
+- 🎯 Hero section with strong branding and call-to-action
+- 🍵 Featured matcha drinks and specialties
+- 🎨 Elegant and soothing design system
+- ⚡ Smooth scrolling and micro-interactions
+- 📱 Mobile-first responsive design
+- 🧩 Reusable and modular components
+
+---
+
+## 🎨 Design System
+
+### Colors
+- Matcha Green – Fresh, natural, and calming
+- Soft Beige – Clean and minimal background
+- Earth Tones – Warm and organic accents
+
+### Typography
+- Headings: Elegant serif style (premium feel)
+- Body: Clean and modern sans-serif
+
+---
+
+## ⚙️ Tech Stack
+
+- React / Vite
+- Tailwind CSS
+- Modern JavaScript (ES6+)
+- Component-based architecture
+
+---
+
+## 🚀 Performance
+
+- Fast loading experience
+- Optimized assets and images
+- Smooth transitions and animations
+- Lightweight and efficient UI
+
+---
+
+## 🎯 Purpose
+
+This project aims to create a premium digital identity for a matcha brand by:
+- Delivering a calming and aesthetic experience
+- Showcasing matcha culture and products
+- Engaging users with modern UI/UX
+
+---
+
+## 📌 Status
+
+Live and deployed on Vercel  
+Ready for future enhancements and scaling
+
+---
+
+## 🔮 Future Improvements
+
+- Online ordering system
+- Dark mode toggle
+- Multi-language support (EN / JP)
+- Advanced animations and interactions
+- Backend integration for dynamic content
+
+---
+
+## 👨‍💻 Author
+
+Muhammad Kamran  
+Frontend Developer & Freelancer
+
+---
+
+## 💡 Vision
+
+Bringing the serenity of matcha culture into a modern digital experience.
