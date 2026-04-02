@@ -49,11 +49,3 @@ View Link: https://longscafe.vercel.app/
 - Footer
 
 ---
-
-## ⚡ Goal
-Deliver a premium, calming, and engaging digital experience that reflects a high-end café brand and encourages user interaction.
-
----
-
-## 📌 Status
-Ready for development and customization.
