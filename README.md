@@ -7,6 +7,8 @@ A modern, visually stunning landing page for a premium coffee shop brand special
 ## 🚀 Overview
 This project showcases a luxury café-style web experience with smooth animations, elegant typography, and a calming design inspired by Japanese Zen aesthetics.
 
+View Link: https://longscafe.vercel.app/
+
 ---
 
 ## 🛠 Tech Stack
@@ -35,6 +37,7 @@ This project showcases a luxury café-style web experience with smooth animation
 - Optimized performance with modern practices
 
 ---
+
 
 ## 📱 Sections
 - Hero
